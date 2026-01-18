@@ -102,18 +102,18 @@ const data = [
     })
 })
 
-describe('параметризированный тест функции getTotal', ()) => {
+describe('параметризированный тест функции getTotal', () => {
   const testPositive = [
     {
       total: [10, 10], 100,
       expected: 0
-    },
+    }
   ]
     test.each(testPositive)('тест параметризированный для функции getTotal',
       ({total, expected}) => {
-        expect(getTotal(total)).toBe(expected);
+        expect(getTotal(total)).toBe(expected)
       })
-    }
+    })
 
 
 //describe('getTotal', () => {
